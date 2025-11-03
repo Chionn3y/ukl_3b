@@ -14,16 +14,15 @@ public class ukl_3b{
         int kolom = input.nextInt();
 
         int[][] matriksA = new int[baris][kolom];
-        int[][] matriksB = new int[baris][kolom];
-        int[][] hasil = new int[baris][kolom];
-
-        System.out.println("\nMasukkan elemen-elemen Matriks A:");
         for (int i = 0; i < baris; i++) {
             for (int j = 0; j < kolom; j++) {
                 System.out.print("A[" + i + "][" + j + "] = ");
                 matriksA[i][j] = input.nextInt();
             }
         }
+        // Siapkan matriks B dan matriks hasil
+        int[][] matriksB = new int[baris][kolom];
+        int[][] hasil = new int[baris][kolom];
 
         System.out.println("\nMasukkan elemen-elemen Matriks B:");
         for (int i = 0; i < baris; i++) {
